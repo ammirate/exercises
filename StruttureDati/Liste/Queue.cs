@@ -12,17 +12,25 @@ namespace StruttureDati.Liste {
     public class Queue<T> : IQueue<T> {
 
         private int SIZE = 5;
+        private int dim;
         private int items;
         private T[] queue;
         private int front, rear;
 
-        public Queue() {
-            queue = new T[SIZE];
+
+        public Queue(int size) {
+            dim = size;
+            queue = new T[size];
             front = rear = 0;
             items = 0;
         }
 
+        // extends the previous constructor
+        public Queue() : this(5) {
+       
+        }
 
+ 
         public bool isEmpty() {
             return rear == front && items == 0;
         }
@@ -43,7 +51,7 @@ namespace StruttureDati.Liste {
         }
 
         public void enqueue(T element) {
-            if (items == SIZE) {
+            if (items == dim) {
                 throw new InvalidOperationException("Queue is full");
             }
             queue[rear] = element;
@@ -60,7 +68,7 @@ namespace StruttureDati.Liste {
 
 
         private int circularIncrement(int var) {
-            return var = (var + 1) % SIZE; 
+            return var = (var + 1) % dim; 
         }
     }
 }

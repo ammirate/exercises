@@ -51,11 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Liste\Exercise\Josephus.cs" />
     <Compile Include="Liste\IQueue.cs" />
     <Compile Include="Liste\IStack.cs" />
     <Compile Include="Liste\Queue.cs" />
     <Compile Include="Liste\Stack.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
