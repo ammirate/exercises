@@ -56,6 +56,8 @@
     <Compile Include="Liste\IStack.cs" />
     <Compile Include="Liste\Queue.cs" />
     <Compile Include="Liste\Stack.cs" />
+    <Compile Include="ListeConcatenate\Node.cs" />
+    <Compile Include="ListeConcatenate\NodeStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
