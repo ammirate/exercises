@@ -51,6 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListeConcatenate\Deque.cs" />
+    <Compile Include="ListeConcatenate\IDeque.cs" />
     <Compile Include="Liste\Exercise\Josephus.cs" />
     <Compile Include="Liste\IQueue.cs" />
     <Compile Include="Liste\IStack.cs" />
