@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="ListeConcatenate\NodeStackTest.cs" />
     <Compile Include="ListeConcatenate\DequeTest.cs" />
+    <Compile Include="Liste\ArrayListTest.cs" />
     <Compile Include="Liste\QueueTest.cs" />
     <Compile Include="Liste\StackTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
