@@ -18,6 +18,12 @@ namespace StruttureDati.Liste {
             head = -1;
         }
 
+        public Stack(int size) {
+            stack = new T[size];
+            head = -1;
+            SIZE = size;
+        }
+
         public bool isEmpty() {
             return head < 0;
         }

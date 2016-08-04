@@ -15,7 +15,7 @@ namespace StruttureDati.Liste {
     */
     class Josephus {
 
-        static void Main() {
+        static void Main1() {
             Console.WriteLine("The saved boy will be..." + josephus(500, 15));
             System.Console.ReadKey();
         }
