@@ -56,6 +56,8 @@
     <Compile Include="Liste\ArrayList.cs" />
     <Compile Include="Liste\Exercise\InsertionSort.cs" />
     <Compile Include="Liste\Exercise\Josephus.cs" />
+    <Compile Include="Liste\Exercise\MainClass.cs" />
+    <Compile Include="Liste\Exercise\MergeSort.cs" />
     <Compile Include="Liste\Exercise\StackQueue.cs" />
     <Compile Include="Liste\IArrayList.cs" />
     <Compile Include="Liste\IQueue.cs" />

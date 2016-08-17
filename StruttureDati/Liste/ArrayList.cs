@@ -69,7 +69,7 @@ public class ArrayList<T> : IArrayList<T> {
         checkIndex(index);
         T temp = list[index];
 
-        for (int i = index; i < size() - 1; i++) {
+        for (int i = index; i <= size()-1; i++) {
             list[i] = list[i + 1];
         }
         n--;

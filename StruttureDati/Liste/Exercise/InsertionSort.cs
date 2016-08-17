@@ -32,7 +32,7 @@ namespace StruttureDati.Liste.Exercise {
         }
 
 
-        static void Main() {
+        public static void run() {
             
             ArrayList<int> V = new ArrayList<int>();
             V.add(10);
