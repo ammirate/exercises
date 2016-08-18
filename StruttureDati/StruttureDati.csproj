@@ -52,7 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListeConcatenate\Deque.cs" />
+    <Compile Include="ListeConcatenate\DNode.cs" />
     <Compile Include="ListeConcatenate\IDeque.cs" />
+    <Compile Include="ListeConcatenate\IPosition.cs" />
+    <Compile Include="ListeConcatenate\IPositionList.cs" />
+    <Compile Include="ListeConcatenate\NodePositionList.cs" />
     <Compile Include="Liste\ArrayList.cs" />
     <Compile Include="Liste\Exercise\InsertionSort.cs" />
     <Compile Include="Liste\Exercise\Josephus.cs" />

@@ -65,14 +65,6 @@ namespace StruttureDatiTest.Liste {
                 queue.enqueue(i);
             }
             Assert.AreEqual(5, queue.size());
-
-            Exception captured = null;
-            try {
-                queue.enqueue(0);
-            }catch(Exception e) {
-                captured = e;
-            }
-            Assert.IsNotNull(captured);
         }
 
 
