@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="ListeConcatenate\Deque.cs" />
     <Compile Include="ListeConcatenate\DNode.cs" />
+    <Compile Include="ListeConcatenate\ElementIterator.cs" />
     <Compile Include="ListeConcatenate\IDeque.cs" />
     <Compile Include="ListeConcatenate\IPosition.cs" />
     <Compile Include="ListeConcatenate\IPositionList.cs" />
@@ -71,6 +72,10 @@
     <Compile Include="ListeConcatenate\Node.cs" />
     <Compile Include="ListeConcatenate\NodeStack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tree\ITree.cs" />
+    <Compile Include="Tree\LinkedTree.cs" />
+    <Compile Include="Tree\TreeNode.cs" />
+    <Compile Include="Tree\ITreePosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace StruttureDati.ListeConcatenate {
     public class NodePositionList<T> : IPositionList<T> {
@@ -116,6 +118,28 @@ namespace StruttureDati.ListeConcatenate {
             return toReturn;
         }
 
-       
+        public IEnumerator<T> GetEnumerator() {
+            return new ElementIterator<T>(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() {
+            return new ElementIterator<T>(this);
+        }
+
+        public IEnumerable<IPosition<T>> positions() {
+            IPositionList<IPosition<T>> P = new NodePositionList<IPosition<T>>();
+
+            if (!isEmpty()) {
+                IPosition<T> p = first();
+                while (true) {
+                    P.addLast(p);
+                    if (p == last()) {
+                        break;
+                    }
+                    p = next(p);
+                }
+            }
+            return P;
+        }
     }
 }

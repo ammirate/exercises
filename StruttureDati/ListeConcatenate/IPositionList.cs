@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace StruttureDati.ListeConcatenate {
-    public interface IPositionList<T> {
+    public interface IPositionList<T> : IEnumerable<T> {
         int size();
         bool isEmpty();
         IPosition<T> first(); // throws EmptyListException
@@ -18,5 +18,7 @@ namespace StruttureDati.ListeConcatenate {
         void addBefore(IPosition<T> p, T element); //throws InvalidPositionException
         T set(IPosition<T> p, T element);
         T remove(IPosition<T> p);
+       
+        IEnumerable<IPosition<T>> positions();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StruttureDati.ListeConcatenate;
+using System.Collections.Generic;
 
 namespace StruttureDatiTest.ListeConcatenate {
     [TestClass]
@@ -103,5 +104,21 @@ namespace StruttureDatiTest.ListeConcatenate {
             Assert.AreEqual(10, L.first().element());
         }
 
+
+        [TestMethod]
+        public void EnumeratorTest() {
+            L.addLast(1);
+            L.addLast(2);
+            L.addLast(3);
+            L.addLast(4);
+            L.addLast(5);
+            IPosition<int> node = L.first();
+
+            IEnumerator<int> enumerator = L.GetEnumerator();
+            while (enumerator.MoveNext()) {
+                Assert.AreEqual(node.element(), enumerator.Current);
+                node = L.next(node);
+            }
+        }
     }
 }

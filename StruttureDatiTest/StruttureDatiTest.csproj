@@ -60,6 +60,7 @@
     <Compile Include="Liste\QueueTest.cs" />
     <Compile Include="Liste\StackTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tree\LinkedTreeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StruttureDati\StruttureDati.csproj">
