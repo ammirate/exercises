@@ -19,10 +19,10 @@ namespace StruttureDati.ListeConcatenate {
 
         public T Current {
             get {
-                T temp = cursor.element();
                 if (cursor == null) {
                     throw new ArgumentOutOfRangeException("No more elements");
                 }
+                T temp = this.cursor.element();
                 cursor = (cursor == list.last()) ? null : list.next(cursor);
                 return temp;
             }
@@ -40,11 +40,11 @@ namespace StruttureDati.ListeConcatenate {
         }
 
         public bool MoveNext() {
-            return cursor == null;
+            return cursor != null; ;
         }
 
         public void Reset() {
-            cursor = list.isEmpty() ? null : list.first();
+            this.cursor = list.isEmpty() ? null : this.list.first();
         }
     }
 }

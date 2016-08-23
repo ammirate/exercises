@@ -82,5 +82,8 @@ public class ArrayList<T> : IArrayList<T> {
         }
     }
 
+    public static implicit operator List<T>(ArrayList<T> v) {
+        throw new NotImplementedException();
+    }
 }
 

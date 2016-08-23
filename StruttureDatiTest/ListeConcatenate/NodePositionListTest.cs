@@ -115,10 +115,14 @@ namespace StruttureDatiTest.ListeConcatenate {
             IPosition<int> node = L.first();
 
             IEnumerator<int> enumerator = L.GetEnumerator();
+            int count = 0;
+
             while (enumerator.MoveNext()) {
-                Assert.AreEqual(node.element(), enumerator.Current);
-                node = L.next(node);
+                Assert.IsNotNull(enumerator.Current);
+                count++;
             }
+
+            Assert.AreEqual(L.size(), count);
         }
     }
 }
