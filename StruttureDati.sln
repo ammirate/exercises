@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StruttureDati", "StruttureDati\StruttureDati.csproj", "{312DE7B7-BC20-478F-A46F-A6EACA2EFC56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "StruttureDati\DataStructures.csproj", "{312DE7B7-BC20-478F-A46F-A6EACA2EFC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StruttureDatiTest", "StruttureDatiTest\StruttureDatiTest.csproj", "{C8E729E0-0879-4D47-AFCD-601FCD0F4488}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructuresTest", "StruttureDatiTest\DataStructuresTest.csproj", "{C8E729E0-0879-4D47-AFCD-601FCD0F4488}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

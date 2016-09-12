@@ -1,22 +1,12 @@
-﻿using StruttureDati.ListeConcatenate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿public interface ITreePosition<T> : IPosition<T> {
 
-namespace StruttureDati.Tree {
+    void setElement(T element);
 
-    public interface ITreePosition<T> : IPosition<T> {
+    void setParent(ITreePosition<T> parent);
 
-        void setElement(T element);
+    ITreePosition<T> getParent();
 
-        void setParent(ITreePosition<T> parent);
+    void setChildren(IPositionList<ITreePosition<T>> children);
 
-        ITreePosition<T> getParent();
-
-        void setChildren(IPositionList<ITreePosition<T>> children);
-
-        IPositionList<ITreePosition<T>> getChildren();
-    }
+    IPositionList<ITreePosition<T>> getChildren();
 }
