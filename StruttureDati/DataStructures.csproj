@@ -82,6 +82,7 @@
     <Compile Include="Tree\IBinaryTree.cs" />
     <Compile Include="Tree\IBTPosition.cs" />
     <Compile Include="Tree\ICompleteBinaryTree.cs" />
+    <Compile Include="Tree\Heap.cs" />
     <Compile Include="Tree\ITree.cs" />
     <Compile Include="Tree\LinkedBinaryTree.cs" />
     <Compile Include="Tree\LinkedTree.cs" />
